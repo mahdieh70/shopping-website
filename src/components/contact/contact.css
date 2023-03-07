@@ -1,0 +1,147 @@
+.contactBanner {
+  text-align: center;
+  height: 240px;
+  background-image: url("../../assets/bg_6.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contactBanner h1 {
+  padding-top: 120px;
+  font-size: 26px;
+}
+
+.contactContainer {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 90px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contactDetails {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contactDetails span {
+  opacity: 0.7;
+}
+.addressBox,
+.phoneBox,
+.emailBox,
+.websiteBox {
+  margin: 20px 27px;
+  width: 265px;
+  padding: 18px 20px 79px 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 24px rgb(149 157 165 / 40%);
+  border-radius: 5px;
+}
+.messageContainer {
+  width: 70%;
+  margin-top: 100px;
+}
+
+.messageContainer p {
+  margin: 15px 0;
+  text-align: justify;
+  opacity: 0.7;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  width: 100%;
+  padding: 14px 10px;
+  outline: none;
+  border: 1px solid lightgray;
+  box-shadow: 0 5px 24px rgb(149 157 165 / 40%);
+}
+.form input:focus {
+  border: 1px solid blue;
+}
+
+.text-area {
+  width: 100%;
+  outline: none;
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin: 12px 0;
+}
+.text-area:focus {
+  border: 1px solid blue;
+}
+.submitBtn {
+  height: 50px;
+  padding: 12px 22px;
+  margin: 15px auto;
+  border-radius: 5px;
+  background-color: green;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  border: 1px solid green;
+  background-color: transparent;
+  color: black;
+}
+.errorMessage {
+  color: crimson;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 769px) {
+  .contactBanner {
+    height: 200px;
+  }
+  .contactBanner h1 {
+    padding-top: 100px;
+}
+  .contactContainer {
+    padding: 50px 0;
+  }
+  .messageContainer {
+    margin-top: 60px;
+  }
+  .messageContainer h1 {
+    font-size: 24px;
+  }
+  .submitBtn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+  @media (max-width: 480px) {
+    .contactBanner {
+      height: 130px;
+    }
+    .contactBanner h1 {
+      padding-top: 65px;
+      font-size: 23px;
+    }
+    .addressBox,.phoneBox,.emailBox,.websiteBox {
+      padding: 18px 20px 50px 20px;
+      font-size: 14px;
+    }
+    
+    .messageContainer h1{
+      font-size: 22px;
+    }
+    .form input{
+      padding: 10px;
+      font-size: 12px;
+    }
+    .text-area{
+      font-size: 12px;
+      margin: 0;
+    }
+    .form{
+      row-gap: 10px;
+    }
+  }
+}

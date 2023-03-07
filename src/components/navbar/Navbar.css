@@ -1,0 +1,133 @@
+.header-section {
+  width: 100%;
+  padding: 20px 100px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 999;
+}
+.header-section.active {
+  background: #fff;
+  box-shadow: 0 5px 24px rgb(149 157 165 / 40%);
+  transition: all 0.2s;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navbar #navbarList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar #navbarList li {
+  margin: 0 10px;
+}
+.shoppingCartIcon {
+  position: relative;
+}
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  width: 90px;
+}
+
+.navbar-icons i {
+  color: black;
+  font-size: 22px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.navbar-icons i:hover {
+  color: #f28544;
+}
+
+.inActive {
+  font-size: 20px;
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.activeElem {
+  font-size: 20px;
+  color: #f28544;
+  margin: 0 10px;
+  text-decoration: none;
+}
+.navbar-icons span {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #f28544;
+  width: 19px;
+  height: 19px;
+  line-height: 18px;
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: bold;
+  color: #f28544;
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .header-section {
+    padding: 20px 60px;
+  }
+}
+@media (max-width: 769px) {
+  .header-section {
+    padding: 20px 50px;
+  }
+  #navbarList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 75px;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.3s ease-in-out;
+    background-color: #fff;
+  }
+  #navbarList.active {
+    height: auto;
+    padding: 10px;
+  }
+
+  #navbarList li {
+    padding: 12px;
+  }
+  .mobile {
+    display: block;
+  }
+  .mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 480px) {
+  .header-section {
+    padding: 20px 15px;
+  }
+  .logo img {
+    width: 55px;
+  }
+  #navbarList {
+    top: 65px;
+  }
+  .inActive {
+    font-size: 16px;
+  }
+  .activeElem {
+    font-size: 16px;
+  }
+}

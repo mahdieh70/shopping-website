@@ -1,0 +1,38 @@
+.column {
+  border: 1px solid gray;
+  display: flex;
+  width: 400px;
+}
+.productRow {
+  width: 200px;
+  border-right: 1px solid gray;
+}
+.priceRow {
+  width: 100px;
+  border-right: 1px solid gray;
+  text-align: center;
+}
+.quantityRow {
+  width: 80px;
+  text-align: center;
+}
+.priceRow,
+.productRow,
+.quantityRow {
+  padding: 5px 8px;
+}
+@media (max-width: 480px) {
+  .column {
+    width: 100%;
+    font-size: 12px;
+  }
+  .productRow{
+    width: 40%;
+  }
+  .priceRow{
+    width: 25%;
+  }
+  .quantityRow {
+    width: 35%;
+  }
+}

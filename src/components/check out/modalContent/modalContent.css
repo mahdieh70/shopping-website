@@ -1,0 +1,44 @@
+.orderModalContainer {
+  text-align: center;
+  padding: 16px 0;
+}
+.orderModalContainer p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 16px;
+}
+.orderModalContainer button {
+ 
+  padding: 10px;
+  border-radius: 5px;
+  background-color: green;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.orderModalContainer button:hover {
+  border: 1px solid green;
+  background-color: transparent;
+  color: black;
+}
+@media (max-width:769px){
+
+  .orderModalContainer{
+    padding: 25px;
+  }
+  .orderModalContainer p{
+    font-size: 16px;
+  }
+  
+}
+@media (max-width:480px){
+  .orderModalContainer{
+    padding: 15px;
+  }
+  .orderModalContainer p{
+    font-size: 12px;
+  }
+  .orderModalContainer button{
+    font-size: 10px;
+  }
+}

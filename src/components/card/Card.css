@@ -1,0 +1,40 @@
+.productsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.itemsContainer {
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 80px 55px 30px 55px;
+}
+.loadMoreContainer button {
+  padding: 12px 22px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  border: none;
+  outline: none;
+  background-color: #e2e2e2;;
+  color: black;
+  cursor: pointer;
+}
+.loadMoreContainer button:hover {
+  border: 1px solid black;
+  background-color: #fff;
+  color: black;
+}
+
+@media (max-width: 480px) {
+  .loadMoreContainer button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
